@@ -367,8 +367,7 @@ function block_dashboard_toribio_main_content($cat = null) {
                     if($cat->name == 'Transición'){
                         $ctn.=html_writer::start_tag('a', ['href'=>'?category='.$cat->id,  'role' => 'link', 'aria-label' => $cat->name,'class' => 'card-category-level']);
                         $ctn .= html_writer::start_tag('figure', ['role' => 'figure']);
-                        $ctn.=html_writer::empty_tag('img', array('src' => $link_img_base.$cat->name.'.svg', 'alt' => 'Imagen del grado '.$grade['name'],'class'=>'category-transicion img-nohover' ,'role' => 'img' ));
-                        $ctn.=html_writer::empty_tag('img', array('src' => $link_img_base.$cat->name.'-hover.svg', 'alt' => '','class'=>'category-transicion img-hover', 'aria-hidden' => true,  'role' => 'img' ));
+                        $ctn.=html_writer::empty_tag('img', array('src' => $link_img_base.$cat->name.'.svg', 'alt' => 'Imagen del grado '.$grade['name'],'class'=>'category-transicion card-category-level' ,'role' => 'img' ));
                         $ctn .= html_writer::end_tag('figure');
                         $ctn .= html_writer::tag('p', $cat->name, array('class'=>'category-level-title', 'aria-labelledby' => $cat->name));
                         $ctn .= html_writer::end_tag('a');
@@ -377,8 +376,7 @@ function block_dashboard_toribio_main_content($cat = null) {
 
                         $ctn.=html_writer::start_tag('a', ['href'=>'#','onclick'=>'showGrades('.$cat->id.')','onFocus'=>'showFocusGrades('.$cat->id.')', 'class' => 'card-category-level','role' => 'link', 'aria-label' => $cat->name]);
                         $ctn .= html_writer::start_tag('figure', ['role' => 'figure']);
-                        $ctn.=html_writer::empty_tag('img', array('src' => $link_img_base.$cat->name.'.svg','class' => 'card-category-level-image img-nohover', 'alt' => 'Imagen del grado '.$grade['name'],'role' => 'img' ));
-                        $ctn.=html_writer::empty_tag('img', array('src' => $link_img_base.$cat->name.'-hover.svg', 'alt' => '', 'aria-hidden' => true,  'class'=>'category-transicion img-hover' ,'role' => 'img'));
+                        $ctn.=html_writer::empty_tag('img', array('src' => $link_img_base.$cat->name.'.svg','class' => 'card-category-level', 'alt' => 'Imagen del grado '.$grade['name'],'role' => 'img' ));
                         $ctn .= html_writer::end_tag('figure');
                         $ctn .= html_writer::tag('p', $cat->name, array('class'=>'category-level-title', 'aria-labelledby' => $cat->name));
                         $ctn .= html_writer::end_tag('a');

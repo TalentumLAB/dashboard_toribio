@@ -1,0 +1,251 @@
+/*
+* Estilos del contenedor de las cards
+*/
+
+.block_dashboard_toribio{
+    border: none !important;
+    background-color: transparent !important;
+    margin-bottom: 0rem !important;
+    /* min-height: 770px; */
+}
+.content-grades a:focus{
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+.dashboard-title{
+    font-style: normal;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #000;
+}
+@media screen and (max-width:768px) {
+    .dashboard-title{
+        font-size: 1.4rem;
+    }
+}
+.dashboard-subtitle{
+    font-style: normal;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #000;
+}
+/*
+* Categorias principales asignaturas
+*/
+.cards-container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.card-dashboard-category{
+    max-width: 265px !important;
+    max-height: 240px;
+}
+.card-category{
+    background: #F9FAFD;
+    box-shadow: 0px 1.57969px 11.0579px rgba(0, 0, 0, 0.25);
+    border-radius: 9.47817px;
+    padding: 1rem;
+    overflow: hidden;
+    align-items: center;
+}
+.card-category-image{
+    max-height: 127px;
+    max-width: 200px;
+    align-self: center;
+}
+.category-title{
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 600;
+    color: #333333;
+    font-size: 1.2rem;
+    margin: 1rem 0 0;
+    text-align: center;
+}
+/*
+* nivel educativo categorias
+*/
+.navigation-container{
+    gap:1rem;
+    margin: 2rem 0;
+}
+.navigation-container:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.back-arrow-menu{
+font-style: normal;
+font-weight: 500;
+font-size:1rem;
+line-height: 19px;
+text-align: center;
+margin: 0 0.5rem;
+color: #000000;
+}
+.card-category-level{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: 255px;
+}
+.card-category-level:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+.card-category-level:hover img{
+    transform: scale(1.1);
+  
+}
+.img-hover{
+    display: none;
+}
+.card-category-level:hover  .img-hover {
+    display: block;
+}
+.card-category-level:hover  .img-nohover {
+    display: none;
+}
+
+.card-category-level .category-transicion{
+    width: 90%;
+}
+.card-category-level img{
+    margin: 10px;
+    padding: .5rem;
+    min-height: 164px;
+    max-height: 170px;
+    width: 100%;
+    overflow: visible;
+    filter: drop-shadow(0 4px 4px rgba(90, 89, 89, 0.25));
+    transition: transform 0.5s;
+}
+
+.category-level-title{
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #000;
+    position: relative;
+    z-index: 1;
+    margin-top: 1.6rem;
+}
+.category-level-title:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*
+*Grados
+*/
+.grade-title{
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 29px;
+    color: #292929;
+}
+.card-grade-image{
+    max-height: 140px;
+}
+/*
+*Guias
+*/
+.card-guide-container{
+    gap: 40px;
+    display: inline-flex !important;
+    align-items: flex-start;
+    justify-content: center;
+    /* display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px; */
+}
+@media screen and (max-width:768px) {
+    .card-guide-container{
+        /* grid-template-columns: repeat(2, 1fr); */
+    }
+}
+@media screen and (max-width:568px) {
+    .card-guide-container{
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+}
+.card-guide{
+    width: 330px;
+    flex-shrink: 0;
+    max-width: 330px;
+    border-radius: 9.523px;
+    background: #F8F8F8;
+    box-shadow: 0px 1.5872453451156616px 11.1107177734375px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+
+}
+.card-guide img, .card-guide .course-not-image{
+    max-height: 200px;
+    background: #fff;
+}
+.course-image{
+    width: 100%;
+    object-fit: fill;
+    height: fit-content;
+}
+@media screen and (max-width:568px) {
+    .course-image{
+        max-height: 140px;
+    }
+}
+.course-image a{
+    min-height: 140px;
+    width: 100%;
+    display: block;
+}
+.course-not-image{
+    width: 100%;
+    height: fit-content;
+}
+.course-not-image a{
+    min-height: 140px;
+    width: 100%;
+    display: block;
+}
+.guide-info{
+    background: rgba(248, 248, 248, 1);
+}
+.guide-title{
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    padding: 0 1rem;
+    line-height: 1.2;
+    display: block;
+}
+.guide-category{
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #434343;
+    padding: 0.5rem 1rem;
+    line-height: 1.2;
+    margin: 0;
+}
+.progress-text{
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C00609;
+    padding: 0 1rem;
+}

@@ -133,7 +133,10 @@ color: #000000;
     color: #000;
     position: relative;
     z-index: 1;
-    margin-top: 1.6rem;
+    
+}
+figure{
+    margin: 0 !important;
 }
 .category-level-title:hover{
     cursor: pointer;

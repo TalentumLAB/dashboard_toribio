@@ -23,7 +23,7 @@ function showGrades(categoryID){
     section.setAttribute('section','active');
     section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     // section_card.style.border='4px solid #618E0E';
-    section_card_title.style.color="#618E0E";
+    section_card_title.style.color="#317839";
     section_card.setAttribute('section','active-card');
     section_card_title.setAttribute('section','active-title');
 }
@@ -52,7 +52,7 @@ function showCourses(categoryID){
     section.setAttribute('section','active');
     section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     // section_card.style.border='4px solid #618E0E';
-    section_card_title.style.color="#618E0E";
+    section_card_title.style.color="#317839";
     section_card.setAttribute('section','active-card');
     section_card_title.setAttribute('section','active-title');
 }

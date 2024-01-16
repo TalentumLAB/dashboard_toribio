@@ -188,7 +188,7 @@ function block_dashboard_toribio_main_content($cat = null) {
         $ctn .= html_writer::start_tag('div', array('class' => 'col-12', 'id' => 'back-arrow', 'role' => 'figure'));
         $ctn .= html_writer::start_tag('a', array('href' => $_SERVER['HTTP_REFERER'], 'class' => 'd-flex navigation-container', 'role' => 'link', 'aria-label' => 'Regresar'));
         $ctn .= html_writer::empty_tag('img', array('src' => $link_img_base . 'back-arrow.svg', 'class' => '', 'alt' => 'Regresar', 'aria-hidden' => true));
-        $ctn .= html_writer::tag('p', get_string('regresar', 'block_dashboard_regional'), array('class' => 'back-arrow-menu', 'aria-labelledby' => 'back-arrow'));
+        $ctn .= html_writer::tag('p', get_string('regresar', 'block_dashboard_toribio'), array('class' => 'back-arrow-menu', 'aria-labelledby' => 'back-arrow'));
         $ctn .= html_writer::end_tag('a');
         $ctn .= html_writer::end_tag('div');
 

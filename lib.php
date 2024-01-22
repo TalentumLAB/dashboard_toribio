@@ -270,7 +270,7 @@ function block_dashboard_toribio_main_content($cat = null) {
                                $context = get_context_instance(CONTEXT_COURSE, $guide->id);
                                $enrrolluser = is_enrolled($context, $USER);
                                
-                               if($enrrolluser || has_capability('moodle/site:config', $context)){
+                            //    if($enrrolluser || has_capability('moodle/site:config', $context)){
    
                                $ctn.=html_writer::start_tag('div', array('class' => 'card-guide p-0 text-left '));
                                
@@ -340,11 +340,11 @@ function block_dashboard_toribio_main_content($cat = null) {
    
    
                                $ctn .= html_writer::end_tag('div');
-                               }else{
-                                   /**
-                                   * no muestra nada si no esta mtriculado en el curso
-                                   */
-                               }
+                            //    }else{
+                            //        /**
+                            //        * no muestra nada si no esta mtriculado en el curso
+                            //        */
+                            //    }
    
                            }
                            $ctn .= html_writer::end_tag('div');

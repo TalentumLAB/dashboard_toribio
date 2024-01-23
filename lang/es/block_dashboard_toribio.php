@@ -46,7 +46,8 @@ $string['search:content'] = 'Text block content';
 $string['privacy:metadata:block'] = 'Dashboard block stores all of its data within the block subsystem.';
 
 $string['regresar'] = 'Regresar';
-$string['guidetitle'] = 'Selecciona un foco';
+$string['guidetitle'] = 'Selecciona la categoría que deseas visitar';
+$string['guidesubtitle'] = 'Acceso al repositorio de contenidos';
 $string['home'] = 'Inicio';
 
 

@@ -197,6 +197,7 @@ function block_dashboard_toribio_main_content($cat = null) {
         */
         $ctn .= html_writer::start_tag('div', array('class' => 'row col-12', 'id' => 'guide-title', 'aria-labelledby' => 'guide-title'));
         $ctn .= html_writer::tag('h1', get_string('guidetitle', 'block_dashboard_toribio'), array('class' => 'dashboard-title col-12', 'id' => 'guide-title'));
+        $ctn .= html_writer::tag('h2', get_string('guidesubtitle', 'block_dashboard_toribio'), array('class' => 'dashboard-title col-12', 'id' => 'guide-title'));
         $ctn .= html_writer::end_tag('div');
 
         
